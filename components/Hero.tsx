@@ -9,7 +9,7 @@ export default function Hero() {
             Authentic Bengali Flavour, <span className="text-gold">Fresh from the Tawa.</span>
           </h1>
           <p className="mt-4 text-offwhite/80">
-            Biryani, kathi rolls, rich curries and grill specials—made fresh, always halal.
+            Real Bengal Fish favourites from the menu: Mahi Mahi Fish Fry, Goat Curry Bhuna, Veg. Biryani and more.
           </p>
           <div className="mt-6 flex gap-3">
             <a className="btn btn-primary" href="#menu">View Menu</a>
@@ -21,19 +21,19 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* RIGHT SIDE – 3 image cards */}
+        {/* RIGHT: 3 real hero images from the flyer’s dishes */}
         <div className="grid grid-cols-3 gap-3">
           {[
-            { src: "/images/hero/hero-biryani.jpg", alt: "Chicken biryani in black karahi" },
-            { src: "/images/hero/hero-kathi-roll.jpg", alt: "Beef kathi roll cross-section" },
-            { src: "/images/hero/hero-mixed-grill.jpg", alt: "Mixed grill platter on slate" },
+            { src: "/images/hero/mahi-mahi-fry.jpg", alt: "Mahi Mahi Fish Fry" },
+            { src: "/images/hero/goat-curry.jpg", alt: "Goat Curry Bhuna" },
+            { src: "/images/hero/veg-biryani.jpg", alt: "Vegetable Biryani" },
           ].map((img, i) => (
             <div key={i} className="relative card aspect-[4/5] overflow-hidden">
               <Image
                 src={img.src}
                 alt={img.alt}
                 fill
-                sizes="(min-width: 768px) 20vw, 33vw"
+                sizes="(min-width: 1024px) 20vw, (min-width: 768px) 33vw, 100vw"
                 className="object-cover"
                 priority={i === 0}
               />
