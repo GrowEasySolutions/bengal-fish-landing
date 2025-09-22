@@ -6,20 +6,17 @@
   --bg: #0B0B0B;
   --fg: #FFFFFF;
 }
+
 html, body { height: 100%; }
 body { background: var(--bg); color: var(--fg); }
+
 .container { @apply max-w-7xl mx-auto px-4; }
 .gold-rule { background: linear-gradient(90deg, rgba(212,175,55,0.9), rgba(212,175,55,0.4)); height: 1px; }
-.btn {
-  @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold transition;
-}
-.btn-primary {
-  @apply border border-gold/70 hover:border-gold bg-gold/10 hover:bg-gold/20;
-}
-.btn-secondary {
-  @apply border border-offwhite/20 hover:border-offwhite/40 bg-white/5 hover:bg-white/10;
-}
-.card {
-  @apply rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-soft;
-}
+
+.btn { @apply inline-flex items-center justify-center rounded-2xl px-5 py-3 text-sm font-semibold transition; }
+.btn-primary { @apply border border-gold/70 hover:border-gold bg-gold/10 hover:bg-gold/20; }
+.btn-secondary { @apply border border-offwhite/20 hover:border-offwhite/40 bg-white/5 hover:bg-white/10; }
+
+.card { @apply rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 shadow-soft; }
+
 a { @apply underline-offset-4 hover:underline; }
