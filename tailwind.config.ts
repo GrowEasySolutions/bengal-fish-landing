@@ -1,4 +1,6 @@
+// tailwind.config.ts
 import type { Config } from "tailwindcss";
+import aspectRatio from "@tailwindcss/aspect-ratio";
 
 export default {
   content: ["./app/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}"],
@@ -12,14 +14,9 @@ export default {
         charcoal: "#1E1E1E",
         deepteal: "#0F4C5C"
       },
-      borderRadius: {
-        xl: "0.85rem",
-        "2xl": "1.25rem"
-      },
-      boxShadow: {
-        soft: "0 8px 30px rgba(0,0,0,0.12)"
-      }
+      borderRadius: { xl: "0.85rem", "2xl": "1.25rem" },
+      boxShadow: { soft: "0 8px 30px rgba(0,0,0,0.12)" }
     }
   },
-  plugins: []
+  plugins: [aspectRatio]   // ← add this
 } satisfies Config;
