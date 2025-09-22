@@ -1,6 +1,11 @@
 "use client";
 import { useState } from "react";
-import { reviews } from "@/data/reviews";
+
+const reviews = [
+  { name: "Aisha K.", text: "The biryani has that perfect warmth and aroma. New favourite!", stars: 5 },
+  { name: "Rahul S.", text: "Authentic flavours and lovely service. Highly recommend.", stars: 5 },
+  { name: "Nadia T.", text: "Great halal spot for family dinner.", stars: 5 }
+];
 
 export default function ReviewCarousel() {
   const [i, setI] = useState(0);
