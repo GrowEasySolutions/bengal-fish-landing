@@ -28,7 +28,7 @@ export default function Hero() {
             { src: "/images/hero/goat-curry.jpg", alt: "Goat Curry Bhuna" },
             { src: "/images/hero/veg-biryani.jpg", alt: "Vegetable Biryani" },
           ].map((img, i) => (
-            <div key={i} className="relative card aspect-[4/5] overflow-hidden">
+            <div key={i} className="relative card overflow-hidden h-[260px] md:h-[360px] lg:h-[420px]">
               <Image
                 src={img.src}
                 alt={img.alt}
