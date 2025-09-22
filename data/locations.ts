@@ -4,7 +4,6 @@ export type Location = {
   brandName: string;
   address: string;
   phone: string;
-  hours?: { [day: string]: string };
   mapsUrl: string;
   reviewsUrl?: string;
 };
