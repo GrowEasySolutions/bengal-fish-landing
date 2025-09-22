@@ -21,7 +21,7 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* RIGHT: 3 real hero images from the flyer’s dishes */}
+        {/* RIGHT: 3 hero images */}
         <div className="grid grid-cols-3 gap-3">
           {[
             { src: "/images/hero/mahi-mahi-fry.jpg", alt: "Mahi Mahi Fish Fry" },
