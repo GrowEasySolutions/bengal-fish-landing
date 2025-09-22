@@ -9,10 +9,8 @@ export const galleryImages: GalleryImage[] = [
   { src: "/images/gallery/bengal-fish-pakora.jpg", alt: "Bengal Fish Pakora" },
   { src: "/images/gallery/paneer-tikka.jpg", alt: "Paneer Tikka" },
   { src: "/images/gallery/chilli-fish-manchurian.jpg", alt: "Chilli Fish Manchurian" },
-
-  // Acceptable non-dish shots that do not misrepresent offerings:
   { src: "/images/gallery/spice-bowls.jpg", alt: "Spice bowls flatlay" },
   { src: "/images/gallery/naan-basket.jpg", alt: "Naan basket" },
   { src: "/images/gallery/chutneys.jpg", alt: "Chutneys trio" },
-  { src: "/images/gallery/tea.jpg", alt: "Chai tea in a glass" },
+  { src: "/images/gallery/tea.jpg", alt: "Chai tea in a glass" }
 ];
