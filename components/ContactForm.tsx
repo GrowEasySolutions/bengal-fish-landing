@@ -1,3 +1,5 @@
+"use client";
+
 export default function ContactForm() {
   return (
     <section id="contact" className="container py-12 md:py-16">
