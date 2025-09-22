@@ -1,4 +1,3 @@
-// /components/PopularDishes.tsx
 import Image from "next/image";
 import { menuHighlights } from "@/data/menu-highlights";
 
@@ -21,9 +20,6 @@ export default function PopularDishes() {
             <div className="p-4">
               <h3 className="font-medium">{m.name}</h3>
               <p className="text-sm text-offwhite/80">{m.description}</p>
-              {m.spice && (
-                <p className="mt-1 text-xs text-offwhite/60">Spice: {m.spice}</p>
-              )}
             </div>
           </article>
         ))}
@@ -31,3 +27,4 @@ export default function PopularDishes() {
     </section>
   );
 }
+
