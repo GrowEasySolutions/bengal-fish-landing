@@ -1,0 +1,1 @@
+Add images to /public/images and reference them with next/image.
