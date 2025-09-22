@@ -1,4 +1,4 @@
-import { menuHighlights } from "@/data/menu-highlights";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -20,13 +20,23 @@ export default function Hero() {
             <span>“Loved by our local community”</span>
           </div>
         </div>
+
+        {/* RIGHT SIDE – 3 image cards */}
         <div className="grid grid-cols-3 gap-3">
-          {menuHighlights.slice(0,3).map((item, i) => (
-            <div key={i} className="card aspect-[4/5] flex items-end p-4">
-              <div>
-                <div className="text-lg font-semibold">{item.name}</div>
-                <div className="text-xs text-offwhite/70">{item.description}</div>
-              </div>
+          {[
+            { src: "/images/hero/hero-biryani.jpg", alt: "Chicken biryani in black karahi" },
+            { src: "/images/hero/hero-kathi-roll.jpg", alt: "Beef kathi roll cross-section" },
+            { src: "/images/hero/hero-mixed-grill.jpg", alt: "Mixed grill platter on slate" },
+          ].map((img, i) => (
+            <div key={i} className="relative card aspect-[4/5] overflow-hidden">
+              <Image
+                src={img.src}
+                alt={img.alt}
+                fill
+                sizes="(min-width: 768px) 20vw, 33vw"
+                className="object-cover"
+                priority={i === 0}
+              />
             </div>
           ))}
         </div>
